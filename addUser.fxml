@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quick_loans.AddUserController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #43561A;">
+            <children>
+                <Label layoutX="49.0" layoutY="262.0" text="Instant Loans" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font></Label>
+                <ImageView fitHeight="145.0" fitWidth="145.0" layoutX="26.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/refund-2.png" />
+                    </image></ImageView>
+                <Label layoutX="26.0" layoutY="234.0" text="Quick Loans" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                    </font></Label>
+            </children></AnchorPane>
+        <AnchorPane prefHeight="400.0" prefWidth="453.0">
+            <children>
+                <Pane layoutX="48.0" layoutY="43.0" prefHeight="350.0" prefWidth="354.0" style="-fx-background-color: #EEEFC5; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 5, 5);">
+                    <children>
+                        <Label layoutX="28.0" layoutY="42.0" text="Add a New User">
+                            <font>
+                                <Font name="Arial" size="30.0" />
+                            </font></Label>
+                        <Label layoutX="25.0" layoutY="96.0" text="Full Name" textFill="#7e7e7e">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="11.0" />
+                            </font></Label>
+                        <TextField fx:id="tf_fullName" layoutX="19.0" layoutY="117.0" prefHeight="32.0" prefWidth="301.0" promptText="Enter Full Name" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0;" />
+                        <Label layoutX="25.0" layoutY="160.0" text="Password" textFill="#7e7e7e">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="11.0" />
+                            </font></Label>
+                        <Label layoutX="177.0" layoutY="160.0" text="Confirm Password" textFill="#7e7e7e">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="11.0" />
+                            </font></Label>
+                        <Label layoutX="28.0" layoutY="239.0" text="Access Level" textFill="#7e7e7e">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="11.0" />
+                            </font></Label>
+                        <ComboBox fx:id="cb_accessLevel" layoutX="106.0" layoutY="221.0" prefHeight="36.0" prefWidth="218.0" promptText="Choose Level" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0;">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor></ComboBox>
+                        <Button fx:id="button_addUser" layoutX="139.0" layoutY="270.0" mnemonicParsing="false" style="-fx-background-color: #43561A; -fx-cursor: hand;" text="Add User" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Bold" size="15.0" />
+                            </font></Button>
+                        <TextField fx:id="tf_confirmPass" layoutX="190.0" layoutY="179.0" prefHeight="32.0" prefWidth="134.0" promptText="Re-enter Password" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0;" />
+                        <TextField fx:id="tf_password" layoutX="18.0" layoutY="179.0" prefHeight="25.0" prefWidth="120.0" promptText="Enter Password" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0;" />
+                        <Button fx:id="button_cancel" layoutX="154.0" layoutY="304.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Cancel" textFill="#7e7e7e" underline="true">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="12.0" />
+                            </font>
+                        </Button>
+                    </children></Pane>
+            </children></AnchorPane>
+    </children>
+</HBox>
